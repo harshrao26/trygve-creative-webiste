@@ -17,7 +17,7 @@ const ServicesPage = () => {
 
   return (
     <div>
-      <Card {...serviceData} /> {/* ✅ Props should be passed like this */}
+      <Card {...serviceData} />
     </div>
   );
 };
