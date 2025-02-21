@@ -19,15 +19,15 @@ const EnhancedBeautyHoverCard = ({
 
   return (
     <div
-      className={`relative w-full flex items-center justify-center overflow-hidden  p-8 rounded-3xl  `}
+      className={`relative w-full flex items-center justify-center  rounded-3xl  `}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-full max-w-6xl flex flex-col md:flex-row items-start gap-8 ">
+      <div className="w-full max-w-7xl flex px-16 py-8 hover:bg-zinc-100 flex-col md:flex-row items-start gap-8 overflow-hidden my-2 hoverborder-[1.8px] border-gray-200 rounded-3xl overflow-hidden group transition-all duration-500 ease-in-out">
         {/* Left Text Section */}
         <div className="w-full text-left">
-          <p className="text-xl text-gray-500 font-semibold">{number}</p>
+          <p className="text-2xl text-gray-500 font-semibold">{number}</p>
           <h2 className="text-6xl md:text-7xl font-sembold text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-black">
             {title}
           </h2>
@@ -40,7 +40,7 @@ const EnhancedBeautyHoverCard = ({
 
         {/* Hover Card Section */}
         <div
-          className={`absolute top-0 z-40 left-0 transform ${
+          className={`absolute top-0 z-[1000000] left-0 transform ${
             isHovered ? "opacity-100 scale-100" : "opacity-0 scale-90"
           } transition-all duration-500 ease-out pointer-events-none`}
           style={{

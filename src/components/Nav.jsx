@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/logo.png'
 const Nav = () => {
   return (
-    <div className='px-8 py-2 fixed'>
+    <div className='px-8 py-2 fixed z-50 '>
         <div>
             <img src={logo} alt="" className='w-20' />
         </div>

@@ -6,6 +6,7 @@ import Card from "./components/Card";
 import Quotes from "./components/Quotes";
 import AllHoverCardContainer from "./components/AllHoverCardContainer.jsx";
 import OurWorkSection from "./components/OurWorkSection.jsx";
+import OurResultSection from "./components/OurResultSection.jsx";
 const App = () => {
   return (
     <div>
@@ -29,6 +30,8 @@ const App = () => {
       />
       <AllHoverCardContainer />
       <OurWorkSection />
+    
+      <OurResultSection />
     </div>
   );
 };
