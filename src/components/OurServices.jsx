@@ -21,10 +21,10 @@ const OurServices = () => {
     <div className="max-w-6xl mx-auto py-16 flex flex-col md:flex-row items-center justify-between">
       {/* Left Text Section */}
       <div className="text-center md:text-left">
-        <p className="text-5xl md:text-8xl lg:text-9xl uppercase font-bold">
+        <p className="text-5xl md:text-8xl lg:text-9xl uppercase font-sembold">
           Our
         </p>
-        <span className="block md:inline-block md:pl-24 text-5xl md:text-8xl lg:text-9xl uppercase font-bold">
+        <span className="block md:inline-block md:pl-24 text-5xl md:text-8xl lg:text-9xl uppercase font-bld">
           Services
         </span>
       </div>
