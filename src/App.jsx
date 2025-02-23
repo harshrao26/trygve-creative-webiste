@@ -7,6 +7,9 @@ import Quotes from "./components/Quotes";
 import AllHoverCardContainer from "./components/AllHoverCardContainer.jsx";
 import OurWorkSection from "./components/OurWorkSection.jsx";
 import OurResultSection from "./components/OurResultSection.jsx";
+import BottomMarquee from "./components/BottomMarquee.jsx";
+import Articles from "./components/Articles.jsx";
+import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 const App = () => {
   return (
@@ -33,6 +36,9 @@ const App = () => {
       <OurWorkSection />
     
       <OurResultSection />
+      <Articles />
+      <FAQ />
+      <BottomMarquee/>
       <Footer />
     </div>
   );
