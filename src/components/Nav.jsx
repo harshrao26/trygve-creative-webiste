@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 import logo from "../assets/logo.png"; // Make sure you have a logo in src/assets
-
 const menuItems = [
   { title: "Work", link: "#" },
   { title: "Agency", link: "#" },
@@ -29,13 +28,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative  ">
       {/* Top Navbar */}
-      <nav className="fixed top-0 left-0 w-full flex justify-between items-center p-4 z-50 bg-transparent">
+      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-2 z-50 bg-transparent">
         {/* Logo on the Left */}
         <a href="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-10 h-10 mr-2" />
-          <span className="text-xl font-semibold text-white">BrandName</span>
+          <img src={logo} alt="Logo" className="w-20 h-20 mr-" />
+          {/* <span className="text-xl font-semibold text-white">BrandName</span> */}
         </a>
         {/* Hamburger Menu on the Right */}
         <button
@@ -50,7 +49,7 @@ const Navbar = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed top-4 right-4 w-80 bg-white shadow-lg rounded-3xl p-6 z-40"
+            className="fixed top-8 right-8 w-80 bg-white shadow-2xl  rounded-3xl p-6 z-40"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -92,7 +91,9 @@ const Navbar = () => {
                         <li key={subIndex}>
                           <a
                             href={subItem.link}
-                            className={`pt-3 text-zinc-400 block ${subItem.active ? "" : ""}`}
+                            className={`pt-3 text-zinc-400 block ${
+                              subItem.active ? "" : ""
+                            }`}
                           >
                             {subItem.title}
                           </a>

@@ -11,11 +11,15 @@ import BottomMarquee from "./components/BottomMarquee.jsx";
 import Articles from "./components/Articles.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
+import {TextReveal} from "./components/magicui/text-reveal.jsx";
+// import { CoolMode } from "./components/magicui/cool-mode.jsx";
 const App = () => {
   return (
     <div>
       <Nav />
       <Hero />
+      <TextReveal text="WE ARE HERE TO FULLFILL YOUR ALL DIGITAL SOLUTION NEEDS" />
+
       <OurServices />
       <Card />
       <Card
@@ -34,12 +38,13 @@ const App = () => {
       />
       <AllHoverCardContainer />
       <OurWorkSection />
-    
+
       <OurResultSection />
       <Articles />
       <FAQ />
-      <BottomMarquee/>
+      <BottomMarquee />
       <Footer />
+      {/* <CoolMode>Click Me!</CoolMode> */}
     </div>
   );
 };
