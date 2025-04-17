@@ -2,15 +2,19 @@ import React, { useState, useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 
 const OurServices = () => {
-  const [rotation, setRotation] = useState(105); // Start at 105 degrees
+  const [rotation, setRotation] = useState(105);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Calculate rotation between 105 to 270 degrees
-      const scrollRotation = 105 + window.scrollY * 0.2;
-      if (scrollRotation <= 270) {
-        setRotation(scrollRotation);
-      }
+      const maxRotation = 360;
+      const scrollY = window.scrollY;
+      const scrollHeight = document.body.scrollHeight - window.innerHeight;
+
+      // Percentage scrolled across the full page
+      const scrollPercent = scrollY / scrollHeight;
+      const scrollRotation = 300 + scrollPercent * (maxRotation - 105);
+
+      setRotation(scrollRotation);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,26 +22,32 @@ const OurServices = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto py-16 flex flex-col md:flex-row items-center justify-between">
-      {/* Left Text Section */}
-      <div className="text-center md:text-left">
-        <p className="text-5xl md:text-8xl lg:text-9xl uppercase font-sembold">
-          Our
-        </p>
-        <span className="block md:inline-block md:pl-24 text-5xl md:text-8xl lg:text-9xl uppercase font-bld">
-          Services
-        </span>
-      </div>
+    <section className="relative w-full py-32 px-6 md:px-16 bg-black text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* Text Section */}
+        <div className="flex flex-col text-center md:text-left w-full md:w-1/2">
+          <h2 className="text-6xl md:text-[8rem] leading-[1.1] font-semibold uppercase tracking-tight">
+            Our <span className="block md:pl-28">Services</span>
+          </h2>
+          <p className="mt-8 text-lg md:text-xl text-gray-400 max-w-xl">
+            We don’t just create — we design experiences, build tech, and craft
+            visibility. From brand identity to SEO, our team ensures your
+            digital presence is unforgettable.
+          </p>
+        </div>
 
-      {/* Rotating Arrow Section */}
-      <div className="mt-8 md:mt-0">
-        <ArrowLeft
-          className="bg-[#CFEDFD] rounded-full transition-transform duration-300"
-          size={140}
-          style={{ transform: `rotate(${Math.min(rotation, 270)}deg)` }}
-        />
+        {/* Scroll-Responsive Rotating Arrow */}
+        <div className="relative w-[160px] h-[160px] flex items-center justify-center">
+          <ArrowLeft
+            size={160}
+            className="text-black bg-white rounded-full p-4 shadow-xl transition-transform duration-300"
+            style={{
+              transform: `rotate(${rotation}deg)`,
+            }}
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

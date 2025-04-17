@@ -1,8 +1,8 @@
-// src/components/Navbar.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
-import logo from "../assets/logo.png"; // Make sure you have a logo in src/assets
+import logo from "../assets/logo.png";
+
 const menuItems = [
   { title: "Work", link: "#" },
   { title: "Agency", link: "#" },
@@ -22,40 +22,54 @@ const menuItems = [
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleSubMenu = (title) => {
     setActiveMenu(activeMenu === title ? null : title);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="relative  ">
+    <div className="relative">
       {/* Top Navbar */}
-      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-2 z-50 bg-transparent">
-        {/* Logo on the Left */}
+      <nav
+        className={`fixed top-0 left-0 w-full flex justify-between items-center px-8 py-2 z-50 transition-all duration-300 ${
+          scrolled ? "backdrop-blur-md bg-white/30 shadow-md" : "bg-transparent"
+        }`}
+      >
+        {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-20 h-20 mr-" />
-          {/* <span className="text-xl font-semibold text-white">BrandName</span> */}
+          <img src={logo} alt="Logo" className="w-24 h-24" />
         </a>
-        {/* Hamburger Menu on the Right */}
+
+        {/* Menu button (always on top of navbar) */}
         <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="text-white bg-black rounded-full p-2 shadow-md focus:outline-none"
-        >
-          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="text-white bg-black rounded-full p-2 shadow-md z-[100000000] fixed top-6 right-6"
+>
+  {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+</button>
+
       </nav>
 
-      {/* Slide-in Sidebar Menu */}
+      {/* Sidebar */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed top-8 right-8 w-80 bg-white shadow-2xl  rounded-3xl p-6 z-40"
+            className="fixed top-20 right-6 w-80  bg-white shadow-2xl rounded-3xl p-6 z-[1000]"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <ul className="space-y-4 mt-8">
+            <ul className="space-y-4 ">
               {menuItems.map((item, index) => (
                 <li key={index} className="font-semibold">
                   <div
@@ -91,9 +105,7 @@ const Navbar = () => {
                         <li key={subIndex}>
                           <a
                             href={subItem.link}
-                            className={`pt-3 text-zinc-400 block ${
-                              subItem.active ? "" : ""
-                            }`}
+                            className="pt-3 text-zinc-400 block"
                           >
                             {subItem.title}
                           </a>

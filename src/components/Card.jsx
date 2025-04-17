@@ -81,8 +81,8 @@ const Card = ({
   }, []);
 
   return (
-    <div ref={cardRef} className="card-container bg-gray-100 py-10">
-      <div className="flex flex-col lg:flex-row gap-4 px-4 md:px-10 rounded-4xl mx-4 md:mx-10 py-8 md:py-16 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
+    <div ref={cardRef} className="card-container bg-gray-100 py-10  max-w-7l flex flex-col items-center mx-auto">
+      <div className="flex flex-col lg:flex-row gap-4 px-4 md:px-10  rounded-4xl md:mx-10 py-8 md:py-16 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300  max-w-8xl mx-auto">
         <div className="w-full lg:w-1/2 flex flex-col items-start gap-4 md:gap-6">
           <p
             ref={titleRef}

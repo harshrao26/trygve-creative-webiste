@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero2";
 import OurServices from "./components/OurServices";
 import Card from "./components/Card";
 import Quotes from "./components/Quotes";
@@ -13,12 +13,13 @@ import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 import {TextReveal} from "./components/magicui/text-reveal.jsx";
 // import { CoolMode } from "./components/magicui/cool-mode.jsx";
+import AnimatedBackground from './components/AnimatedBackground'
 const App = () => {
   return (
-    <div>
+    <div className="bg-blac">
       <Nav />
       <Hero />
-      <TextReveal text="WE ARE HERE TO FULLFILL YOUR ALL DIGITAL SOLUTION NEEDS" />
+      <TextReveal className="mx-auto max-w-8xl" text="WE ARE HERE TO FULLFILL YOUR ALL DIGITAL SOLUTION NEEDS"  />
 
       <OurServices />
       <Card />

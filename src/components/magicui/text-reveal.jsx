@@ -13,10 +13,10 @@ export const TextReveal = ({ text, className }) => {
   const words = text.split(" ");
 
   return (
-    <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
+    <div ref={targetRef} className={cn("relative z-10 text- h-[200vh] max-w-8xl mx-auto ", className)}>
       <div
         className={
-          "sticky top-0 mx-auto flex h-[50%] max-w-8xl items-center bg-transparent px-[1rem] py-[5rem]"
+          "sticky top-0 mx-auto flex h-[50%] max-w-8xl  items-center bg-transparent  py-[5rem]"
         }
       >
         <p
@@ -36,10 +36,8 @@ export const TextReveal = ({ text, className }) => {
           })}
         </p>
 
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          dignissimos debitis perspiciatis magni. Ratione excepturi ducimus sed
-          repudiandae molestiae fugiat?
+        <div className="">
+        At TRYGVE PIXEL, we specialize in crafting bold digital experiences that elevate your brand and grow your online presence. From building strong brand identities to designing user-centric websites, developing scalable web solutions, and optimizing for search engines — we’re your end-to-end creative tech partner. 
         </div>
       </div>
     </div>
