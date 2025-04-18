@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-10">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="flex justify-between items-center border-b border-gray-800 pb-6 mb-6">
+        <div className="md:flex-row flex flex-col justify-between items-center border-b border-gray-800 pb-6 mb-6">
           {/* Logo */}
           <div className="text-4xl font-bold">KOTA</div>
 

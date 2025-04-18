@@ -22,21 +22,21 @@ export const TextReveal = ({ text, className }) => {
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5 text-2xl font-semibold text-black/20 dark:text-white/20 md:p-8 md:text-6xl lg:p-10 lg:text-6xl xl:text-7xl"
+            "flex flex-wrap p-5 text-6xl  font-semibold text-black/20 dark:text-white/20 md:p-8 md:text-6xl lg:p-10 lg:text-6xl xl:text-7xl"
           }
         >
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;
             return (
-              <Word key={i} progress={scrollYProgress} range={[start, end]}>
+              <Word key={i} progress={scrollYProgress} range={[start, end]} >
                 {word}
               </Word>
             );
           })}
         </p>
 
-        <div className="">
+        <div className="md:block hidden">
         At TRYGVE PIXEL, we specialize in crafting bold digital experiences that elevate your brand and grow your online presence. From building strong brand identities to designing user-centric websites, developing scalable web solutions, and optimizing for search engines — we’re your end-to-end creative tech partner. 
         </div>
       </div>
@@ -49,7 +49,7 @@ const Word = ({ children, progress, range }) => {
   return (
     (<span className="xl:lg-3 relative mx-1 lg:mx-2.5">
       <span className={"absolute opacity-30"}>{children}</span>
-      <motion.span style={{ opacity: opacity }} className={"text-black dark:text-white"}>
+      <motion.span style={{ opacity: opacity }} className={"text-black  dark:text-white"}>
         {children}
       </motion.span>
     </span>)

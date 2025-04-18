@@ -63,13 +63,13 @@ const Navbar = () => {
     <div className="relative">
       {/* Top Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full flex justify-between items-center px-8 py-2 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full flex justify-between items-center md:px-8 py-2 z-50 transition-all duration-300 ${
           scrolled ? "backdrop-blur-md bg-white/30 shadow-md" : "bg-transparent"
         } ${showNav ? "translate-y-0" : "-translate-y-full"}`}
       >
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="w-24 h-24" />
+          <img src={logo} alt="Logo" className="md:w-24 md:h-24 h-20 w-20" />
         </a>
 
         {/* Menu Toggle */}
@@ -77,7 +77,7 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-white bg-black rounded-full p-2 shadow-md z-[100000000] fixed top-6 right-6"
         >
-          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {menuOpen ? <X className="md:w-6 md:h-6 h-4 w-4" /> : <Menu className="md:w-6 md:h-6 h-4 w-4" />}
         </button>
       </nav>
 

@@ -32,7 +32,7 @@ import { VelocityScroll } from '../components/magicui/scroll-based-velocity';
 
 const Marquee = () => {
     return (
-      <div className="relative w-full h-screen bg-bl overflow-hidden bg-black">
+      <div className="relative w-full md:h-screen h-80 bg-bl overflow-hidden bg-black">
         {/* Background Video */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
         <video
