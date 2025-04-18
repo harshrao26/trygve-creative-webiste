@@ -3,7 +3,7 @@ import StackedCards from "./StackedCards";
 
 const HomePage = () => {
   return (
-    <div className="bg-black min-h-screen flex gap-10 justify-center items-center">
+    <div className="bg-white min-h-screen flex gap-10 justify-center items-center">
       <StackedCards
         cards={[
           {

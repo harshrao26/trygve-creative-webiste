@@ -78,12 +78,12 @@ const StackedCards = ({
 
       {/* Bottom Right Arrow Button */}
       <button
-        className="absolute bottom-4 right-4 p-4 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow"
+        className="absolute bottom-4 right-20 p-4 bg-black rounded-full shadow-md hover:shadow-lg transition-shadow"
         onClick={handleCardRemove}
       >
-        <ArrowRight className="text-black w-6 h-6" />
+        <ArrowRight className="text-white w-6 h-6" />
       </button>
-      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora velit mollitia, vero neque quidem magnam a in alias, maiores soluta odio. Inventore consequatur delectus excepturi qui non facilis molestias repudiandae doloremque laudantium, labore corporis ullam blanditiis commodi? Molestiae maxime ducimus voluptate quidem vitae totam voluptates non, obcaecati aut facilis nobis dicta! Facilis dolorem ad necessitatibus dolorum veritatis nulla numquam tenetur aut reiciendis eius sed libero saepe magni a animi, quod suscipit incidunt assumenda consectetur ex hic optio asperiores iste eaque. Unde eum tempore asperiores numquam libero, molestias vitae possimus magni reprehenderit amet, molestiae modi natus sit alias, quasi ducimus?</h1>
+      <h1 className="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora velit mollitia, vero neque quidem magnam a in alias, maiores soluta odio. Inventore consequatur delectus excepturi qui non facilis molestias repudiandae doloremque laudantium, labore corporis ullam blanditiis commodi? Molestiae maxime ducimus voluptate quidem vitae totam voluptates non, obcaecati aut facilis nobis dicta! Facilis dolorem ad necessitatibus dolorum veritatis nulla numquam tenetur aut reiciendis eius sed libero saepe magni a animi, quod suscipit incidunt assumenda consectetur ex hic optio asperiores iste eaque. Unde eum tempore asperiores numquam libero, molestias vitae possimus magni reprehenderit amet, molestiae modi natus sit alias, quasi ducimus?</h1>
     </div>
   );
 };

@@ -14,6 +14,7 @@ import Footer from "./components/Footer.jsx";
 import {TextReveal} from "./components/magicui/text-reveal.jsx";
 // import { CoolMode } from "./components/magicui/cool-mode.jsx";
 import AnimatedBackground from './components/AnimatedBackground'
+import ScrollEnquiryForm from "./components/ScrollEnquiryForm.jsx";
 const App = () => {
   return (
     <div className="bg-blac">
@@ -38,12 +39,14 @@ const App = () => {
         ]}
       />
       <AllHoverCardContainer />
-      <OurWorkSection />
+      <BottomMarquee />
 
+      <OurWorkSection />
       <OurResultSection />
+      <ScrollEnquiryForm />
       <Articles />
       <FAQ />
-      <BottomMarquee />
+      
       <Footer />
       {/* <CoolMode>Click Me!</CoolMode> */}
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const BespokeWebsites = ({
   textLines = ["We develop bespoke", "websites with three", "things in mind"],
-  gradientBackground = "bg-gradient-to-r from-purple-100 via-pink-100 to-blue-300",
+  gradientBackground = "bg-gradient-to-r from-black via-zinc-900 to-zinc-900",
 }) => {
   return (
     <div
@@ -12,7 +12,7 @@ const BespokeWebsites = ({
         {textLines.map((line, index) => (
           <h1
             key={index}
-            className="text-4xl md:text-6xl lg:text-8xl capitalize leading-tigh text-black"
+            className="text-4xl md:text-6xl lg:text-8xl capitalize leading-tigh text-white"
           >
             {line}
             {/* {index === textLines.length - 1 && (
