@@ -42,9 +42,9 @@ const App = () => {
       <BottomMarquee />
 
       <OurWorkSection />
-      <OurResultSection />
+      {/* <OurResultSection /> */}
       <ScrollEnquiryForm />
-      <Articles />
+      {/* <Articles /> */}
       <FAQ />
       
       <Footer />

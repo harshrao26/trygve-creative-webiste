@@ -9,17 +9,17 @@ const Footer = () => {
         {/* Top Section */}
         <div className="md:flex-row flex flex-col justify-between items-center border-b border-gray-800 pb-6 mb-6">
           {/* Logo */}
-          <div className="text-4xl font-bold">KOTA</div>
+          <div className="text-4xl font-bold">Trygve Pixel</div>
 
           {/* Email with gradient animation */}
           <motion.a
-            href="mailto:hello@kota.co.uk"
-            className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
+            href="faisal.saif@trygvestudio.com"
+            className="md:text-5xl text-2xl mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            hello@kota.co.uk
+            faisal.saif@trygvestudio.com
           </motion.a>
         </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
         {/* Sectors */}
         <div className="mb-6">
           <span className="text-gray-500">Our sectors :</span>
-          <div className="flex flex-wrap space-x-4 mt-2">
+          <div className="flex flex-wrap gap-3 space-x-4 mt-2">
             <span className="border border-gray-600 px-3 py-1 rounded-full text-gray-400 hover:text-white transition-colors">
               Agencies
             </span>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-gray-600">© KOTA 2025</div>
+        <div className="text-center text-gray-600">© Trygve Pixel 2025</div>
       </div>
     </footer>
   );

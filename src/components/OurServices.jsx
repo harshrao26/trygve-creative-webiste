@@ -37,7 +37,7 @@ const OurServices = () => {
         </div>
 
         {/* Scroll-Responsive Rotating Arrow */}
-        <div className="relative w-[160px] h-[160px] flex items-center justify-center">
+        <div className="relative w-[160px] h-[160px] hidden  md:flex items-center justify-center">
           <ArrowLeft
             size={160}
             className="text-black bg-white rounded-full p-4 shadow-xl transition-transform duration-300"

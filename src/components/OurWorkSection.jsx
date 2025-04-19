@@ -1,20 +1,24 @@
 import React from "react";
 import WorkDetailCard from "./WorkDetailCard";
+import p1 from "../assets/p1.webp";
+import p2 from "../assets/p2.webp";
+import p3 from "../assets/p3.webp";
+import p6 from "../assets/p6.webp";
 
 const OurWorkSection = () => {
   return (
-    <section className="bg-black">
+    <section className="bg-black mb-2">
       {/* Left Section - OUR WORK */}
-      <div className=" text-white py-20 px-8 md:px-20 h-screen flex flex-col md:flex-row items-center justify-between gap-10">
-        <div className="w-full md:w-1/2">
+      <div className=" text-white py-20 px-8 md:px-20 h- flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-1/2 py-10">
           <h1 className="text-7xl md:text-9xl font-semibold leading-tighter text-white">
             OUR <br /> <span className="ml-20">WORK</span>
           </h1>
         </div>
 
         {/* Right Section - Headline and Description */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+        <div className="w-full md:w-1/2 bg-w">
+          <h2 className="text-4xl md:text-6xl font-semibold leading-tight">
             Making brands a damn site better.
           </h2>
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
@@ -26,37 +30,38 @@ const OurWorkSection = () => {
         </div>
       </div>
 
-      <div className="px-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-10">
+      <div className="md:px-10 px-4 bg-white md:py-20 py-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 ">
         <WorkDetailCard
-          title="Tangerine"
+          title="Drink Groovy"
           year="2023"
-          description="We took on the challenge of creating a new website for Tangerine, a global pioneer in design."
+          description="Creating a vibrant brand for juice lovers."
           tags={["Web design & development", "Agencies"]}
-          imageUrl="https://cdn.dribbble.com/userupload/14894778/file/original-b7e38994449398e4c9282d16da8bb301.jpg?resize=400x0"
+          imageUrl= {p2}
           bgColor="bg-orange-800"
         />
+       
         <WorkDetailCard
-          title="Wogan Coffee"
+          title="CMP Techsseract LLP"
           year="2023"
-          description="Creating a vibrant brand for coffee lovers."
+          description=" We took on the challenge of creating a new website for CMP Techsseract LLP, a global pioneer in design."
           tags={["Branding", "E-commerce"]}
-          imageUrl="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3bb5f691632079.5e372adaa9f70.png"
+          imageUrl={p1}
           bgColor="bg-green-900"
         />
         <WorkDetailCard
-          title="PixelArtworks"
+          title="Streamify"
           year="2023"
-          description="Immersive experiences for digital natives."
+          description="Immersive experiences for content viewers."
           tags={["Digital Design", "Creative Agency"]}
-          imageUrl="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a9ba6291632079.5e4957028d678.jpg"
+          imageUrl={p3}
           bgColor="bg-black"
         />
         <WorkDetailCard
-          title="Tangerine"
+          title="threads of identity"
           year="2023"
-          description="We took on the challenge of creating a new website for Tangerine, a global pioneer in design."
+          description="We embraced the challenge of developing a new e-commerce website for Threads of Identity, a global leader in design."
           tags={["Web design & development", "Agencies"]}
-          imageUrl="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7b43be72445533.60c978f7b5f71.jpg"
+          imageUrl={p6}
           bgColor="bg-orange-800"
         />
       </div>

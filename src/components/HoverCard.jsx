@@ -24,11 +24,11 @@ const EnhancedBeautyHoverCard = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-full max-w-7xl flex px-16 py-8 hover:bg-zinc-100 flex-col md:flex-row items-start gap-8 overflow-hidden my-2 hoverborder-[1.8px] border-gray-200 rounded-3xl overflow-hidden group transition-all duration-500 ease-in-out">
+      <div className="w-full max-w-7xl flex md:px-16 px-4 py-8 hover:bg-zinc-100 flex-col md:flex-row items-start gap-8 overflow-hidden my-2 hoverborder-[1.8px] border-gray-200 rounded-3xl overflow-hidden group transition-all duration-500 ease-in-out">
         {/* Left Text Section */}
         <div className="w-full text-left">
           <p className="text-2xl text-gray-500 font-semibold">{number}</p>
-          <h2 className="text-6xl md:text-7xl font-sembold text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-black">
+          <h2 className="text-4xl md:text-7xl font-sembold text-gray-800 transition-colors duration-300 ease-in-out group-hover:text-black">
             {title}
           </h2>
 

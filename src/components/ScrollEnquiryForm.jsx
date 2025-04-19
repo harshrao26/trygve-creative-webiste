@@ -41,7 +41,7 @@ const SlideInEnquirySection = () => {
       {/* Right Form Section */}
       <div
         className={clsx(
-          "w-full md:w-1/2 transition-all duration-1000 ease-in-out transform",
+          "w-full md:w-1/2 transition-all duration-1000 ease-in-out transform md:mt-0 mt-10",
           isVisible ? "translate-x-0 opacity-100" : "translate-x-32 opacity-0"
         )}
       >

@@ -81,12 +81,12 @@ const Card = ({
   }, []);
 
   return (
-    <div ref={cardRef} className="card-container bg-gray-100 py-10  max-w-7l flex flex-col items-center mx-auto">
-      <div className="flex flex-col lg:flex-row gap-4 px-4 md:px-10  rounded-4xl md:mx-10 py-8 md:py-16 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300  max-w-8xl mx-auto">
+    <div ref={cardRef} className="card-container bg-[#fff0] md:bg-gray-100 py-10  max-w-7l flex flex-col items-center mx-auto">
+      <div className="flex flex-col lg:flex-row gap-4 px-4 md:px-10  rounded-4xl md:mx-10 py-8 md:py-16 bg-white shadow-none md:shadow-lg hover:shadow-2xl transition-shadow duration-300  max-w-8xl mx-auto">
         <div className="w-full lg:w-1/2 flex flex-col items-start gap-4 md:gap-6">
           <p
             ref={titleRef}
-            className="text-3xl md:text-5xl lg:text-7xl leading-snug"
+            className="text-4xl md:text-5xl lg:text-7xl leading-snug"
           >
             {title}
           </p>
@@ -105,16 +105,16 @@ const Card = ({
 
           <p className="text-base md:text-xl font-medium">{description}</p>
 
-          <button
+          {/* <button
             ref={buttonRef}
             className="animated-button px-4 py-2 border-zinc-400 border-[1.8px] rounded-full flex gap-2 items-center hover:bg-gray-100 transition"
           >
             {buttonText}
             <ArrowRight className="inline-block" />
-          </button>
+          </button> */}
         </div>
 
-        <div className="w-full lg:w-1/2 mt-6 lg:mt-0 overflow-hidden rounded-tr-full">
+        <div className="w-full lg:w-1/2 mt- lg:mt-0 overflow-hidden rounded-tr-full">
           <video
             ref={videoRef}
             src={videoSrc}

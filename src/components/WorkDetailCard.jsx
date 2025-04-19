@@ -19,10 +19,10 @@ const EnhancedHoverDetailCard = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Title and Year - Always Visible */}
-      <div className="absolute top-4 left-4">
+      {/* <div className="absolute top-4 left-4">
         <h2 className="text-2xl font-bold text-white">{title}</h2>
         <p className="text-lg text-gray-300">{year}</p>
-      </div>
+      </div> */}
 
       {/* Image Section */}
       <img
@@ -40,9 +40,9 @@ const EnhancedHoverDetailCard = ({
           background: "rgba(0, 0, 0, 0.6)",
         }}
       >
-        <h3 className="text-3xl font-bold text-white mb-4">{title}</h3>
-        <p className="text-lg text-gray-200 mb-6">{description}</p>
-        <div className="flex flex-wrap gap-3 justify-center">
+        <h3 className="md:text-3xl text-2xl font-bold capitalize text-white mb-4">{title}</h3>
+        <p className="md:text-lg text-gray-200 mb-6">{description}</p>
+        {/* <div className="flex flex-wrap gap-3 justify-center">
           {tags.map((tag, index) => (
             <span
               key={index}
@@ -51,7 +51,7 @@ const EnhancedHoverDetailCard = ({
               {tag}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

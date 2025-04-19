@@ -48,7 +48,7 @@ const FAQ = () => {
   return (
     <div className=" bg-black py-16 text-white flex items-center justify-center">
       <div className="max-w-7xl w-full px-4">
-        <h1 className="text-8xl font-semibold mb-10">FAQ's</h1>
+        <h1 className="text-6xl font-semibold mb-10">FAQ's</h1>
         <ul className="space-y-4">
           {faqData.map((item, index) => (
             <li
@@ -56,7 +56,7 @@ const FAQ = () => {
               className=" p-4 hover:bg-zinc-800 transition-all ease-in-out duration-300 hover:px-8"
               onClick={() => toggleFAQ(index)}
             >
-              <button className="w-full text-left flex justify-between items-center text-2xl font-semibld  focus:outline-none">
+              <button className="w-full text-left flex justify-between items-center md:text-2xl font-semibld  focus:outline-none">
                 <span>{item.question}</span>
                 {activeIndex === index ? (
                   <MinusCircle className="w-6 h-6 text-gray-400" />
