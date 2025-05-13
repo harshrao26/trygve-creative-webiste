@@ -47,7 +47,6 @@ const App = () => {
       {/* <Articles /> */}
       <FAQ />
       
-      <Footer />
       {/* <CoolMode>Click Me!</CoolMode> */}
     </div>
   );

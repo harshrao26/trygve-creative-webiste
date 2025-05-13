@@ -182,7 +182,7 @@ const SlideInEnquirySection = () => {
       <div className="w-full md:w-1/2 space-y-6">
         <h2 className="text-4xl md:text-5xl font-great-vibes font-bold leading-snug">
           Let’s build something{" "}
-          <span className="bg-gradient-to-r from-[#4C8CFF] to-[#A05FFF] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r font-great-vibes from-[#4C8CFF] to-[#A05FFF] bg-clip-text text-transparent">
             impactful
           </span>
         </h2>
