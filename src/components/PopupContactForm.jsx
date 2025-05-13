@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 const PopupContactForm = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ const PopupContactForm = ({ onClose }) => {
     projectDescription: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = ({ target: { name, value } }) =>
     setFormData(f => ({ ...f, [name]: value }));
@@ -36,6 +39,8 @@ const PopupContactForm = ({ onClose }) => {
         payload
       );
       onClose();
+      navigate('/thank-you')
+
     } catch (err) {
       console.error("Submission error:", err);
     } finally {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AnimatedBackground from './AnimatedBackground';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const ContactForm = () => {
     projectDescription: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = ({ target: { name, value } }) =>
     setFormData(f => ({ ...f, [name]: value }));
@@ -36,7 +38,9 @@ const ContactForm = () => {
         payload
       );
       // you can clear or show a thank-you here
+      navigate('/thank-you')
       setFormData({ name: '', email: '', phone: '', projectDescription: '' });
+
     } catch (err) {
       console.error('Submission error:', err);
     } finally {

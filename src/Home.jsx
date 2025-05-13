@@ -15,12 +15,37 @@ import {TextReveal} from "./components/magicui/text-reveal.jsx";
 // import { CoolMode } from "./components/magicui/cool-mode.jsx";
 import AnimatedBackground from './components/AnimatedBackground'
 import ScrollEnquiryForm from "./components/ScrollEnquiryForm.jsx";
-import Routing from "./Routes.jsx";
 const App = () => {
   return (
     <div className="bg-blac">
       <Nav />
-      <Routing />
+      <Hero />
+      <TextReveal className="mx-auto max-w-8xl" text="WE ARE HERE TO FULLFILL YOUR ALL DIGITAL SOLUTION NEEDS"  />
+
+      <OurServices />
+      <Card />
+      <Card
+        title="Digital Marketing & SEO"
+        description="Delivering eye-catching motion graphics and campaigns that earn attention, spark emotion, and increase conversions."
+        tags={["Motion graphics", "Creative campaigns", "Marketing support"]}
+        buttonText="Find out more"
+        videoSrc="https://kota-content.b-cdn.net/app/uploads/2024/02/homepage-3.mp4"
+      />
+      <Quotes
+        textLines={[
+          "We develop bespoke",
+          "websites with three",
+          "things in mind",
+        ]}
+      />
+      <AllHoverCardContainer />
+      <BottomMarquee />
+
+      <OurWorkSection />
+      {/* <OurResultSection /> */}
+      <ScrollEnquiryForm />
+      {/* <Articles /> */}
+      <FAQ />
       
       <Footer />
       {/* <CoolMode>Click Me!</CoolMode> */}

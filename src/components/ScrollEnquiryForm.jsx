@@ -118,6 +118,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SlideInEnquirySection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -129,6 +130,7 @@ const SlideInEnquirySection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -164,6 +166,7 @@ const SlideInEnquirySection = () => {
         "https://hook.eu2.make.com/5xu4mcnfhtacg70kw33dw7dqy2r3q1al",
         payload
       );
+      navigate('/thank-you')
     } catch (err) {
       console.error(err);
     } finally {
