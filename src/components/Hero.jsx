@@ -9,7 +9,7 @@ const Hero = () => {
       className="  mx-auto bg-cover bg-center  flex flex-col   justify-end  px-16 py-4 h-screen "
       style={{ backgroundImage: `url(${v1})` }}
     >
-      <h2 className="font-great-vibes  text-[10rem] leading-[140px] tracking-tighter">
+      <h2 className="xp text-[10rem] leading-[140px] tracking-tighter">
         Your Vision, <br />{" "}
         <p className="pl-40 font-great-vibes ">
           Our <br /> <p className="pl-60 font-great-vibes">Expertise</p>
