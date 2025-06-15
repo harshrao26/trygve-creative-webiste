@@ -36,9 +36,7 @@ export const TextReveal = ({ text, className }) => {
           })}
         </p>
 
-        <div className="md:block hidden">
-        At TRYGVE PIXEL, we specialize in crafting bold digital experiences that elevate your brand and grow your online presence. From building strong brand identities to designing user-centric websites, developing scalable web solutions, and optimizing for search engines — we’re your end-to-end creative tech partner. 
-        </div>
+        
       </div>
     </div>
   );

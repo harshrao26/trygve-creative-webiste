@@ -17,10 +17,12 @@ import AnimatedBackground from './components/AnimatedBackground'
 import ScrollEnquiryForm from "./components/ScrollEnquiryForm.jsx";
 const App = () => {
   return (
-    <div className="bg-blac">
+    <div className="">
       <Nav />
       <Hero />
+
       <TextReveal className="mx-auto max-w-8xl" text="WE ARE HERE TO FULLFILL YOUR ALL DIGITAL SOLUTION NEEDS"  />
+      <BottomMarquee />
 
       <OurServices />
       <Card />
@@ -39,7 +41,6 @@ const App = () => {
         ]}
       />
       <AllHoverCardContainer />
-      <BottomMarquee />
 
       <OurWorkSection />
       {/* <OurResultSection /> */}

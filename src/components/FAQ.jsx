@@ -46,14 +46,14 @@ const FAQ = () => {
   };
 
   return (
-    <div className=" bg-black py-16 text-white flex items-center justify-center">
+    <div className=" bg-white py-16 text-black flex items-center justify-center">
       <div className="max-w-7xl w-full px-4">
         <h1 className="text-6xl font-semibold mb-10">FAQ's</h1>
         <ul className="space-y-4">
           {faqData.map((item, index) => (
             <li
               key={index}
-              className=" p-4 hover:bg-zinc-800 transition-all ease-in-out duration-300 hover:px-8"
+              className=" p-4 hover:bg-zinc-100 transition-all ease-in-out duration-300 hover:px-8"
               onClick={() => toggleFAQ(index)}
             >
               <button className="w-full text-left flex justify-between items-center md:text-2xl font-semibld  focus:outline-none">
@@ -71,7 +71,7 @@ const FAQ = () => {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden text-gray-400 mt-2"
+                    className="overflow-hidden text-gray-800 mt-2"
                   >
                     <p>{item.answer}</p>
                   </motion.div>

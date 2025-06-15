@@ -3,7 +3,7 @@ import HoverCard from "./HoverCard";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex overflow-hidden flex-col gap-10">
       <HoverCard
         number="01/"
         title="Beauty"

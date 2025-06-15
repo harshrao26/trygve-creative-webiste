@@ -7,7 +7,7 @@ import p6 from "../assets/p6.webp";
 
 const OurWorkSection = () => {
   return (
-    <section className="bg-black mb-2">
+    <section className="bg-black mb-2 overflow-hidden">
       {/* Left Section - OUR WORK */}
       <div className=" text-white py-20 px-8 md:px-20 h- flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="w-full md:w-1/2 py-10">
