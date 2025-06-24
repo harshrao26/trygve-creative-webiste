@@ -96,7 +96,7 @@ Trygve Studio Private Limited          </motion.a>
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-gray-600">© Trygve Pixel 2025</div>
+        <div className="text-center text-gray-600">© Trygve Pixels 2025</div>
       </div>
     </footer>
   );
