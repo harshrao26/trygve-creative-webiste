@@ -109,7 +109,7 @@ const ContactForm = () => {
             disabled={isSubmitting}
             className="mt-8 w-full bg-white text-black font-semibold tracking-wide py-3 rounded-full hover:bg-opacity-90 transition duration-300 disabled:opacity-50"
           >
-            {isSubmitting ? 'Sending...' : 'Send Inquiry →'}
+            {isSubmitting ? 'Sending...' : 'Send Enquiry →'}
           </button>
         </form>
       </div>

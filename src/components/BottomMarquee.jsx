@@ -54,7 +54,7 @@ const Marquee = () => {
           </div>
 
 
-          <p className='z-20 text-white text-base md:text-xl font- max-w-5xl mx-auto text-center mt-4'>  
+          <p className='z-20 text-white text-xs md:text-xl font- max-w-5xl mx-auto text-center mt-4'>  
           Trygve Pixels, a brand under Trygve Studio Private
 Limited, specializes in Website Development and
 Graphic Design. We craft visually stunning, high-

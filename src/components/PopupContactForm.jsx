@@ -114,7 +114,7 @@ const PopupContactForm = ({ onClose }) => {
             disabled={isSubmitting}
             className="mt-6 w-full bg-white text-black font-semibold py-3 rounded-full hover:bg-opacity-90 transition disabled:opacity-50"
           >
-            {isSubmitting ? "Sending..." : "Send Inquiry →"}
+            {isSubmitting ? "Sending..." : "Send Enquiry →"}
           </button>
         </form>
       </div>

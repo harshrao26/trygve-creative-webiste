@@ -10,19 +10,19 @@ import {
 import logo from "../assets/logo.png";
 
 const menuItems = [
-  { title: "Work", link: "#" },
-  { title: "Agency", link: "#" },
-  {
-    title: "Services",
-    subItems: [
-      { title: "Web design & development", link: "#", active: true },
-      { title: "Branding", link: "#" },
-      { title: "Digital marketing", link: "#" },
-    ],
-  },
-  { title: "Blog", link: "#" },
-  { title: "Culture", link: "#" },
-  { title: "Contact", link: "#" },
+  // { title: "Work", link: "#" },
+  // { title: "Agency", link: "#" },
+  // {
+  //   title: "Services",
+  //   subItems: [
+  //     { title: "Web design & development", link: "#", active: true },
+  //     { title: "Branding", link: "#" },
+  //     { title: "Digital marketing", link: "#" },
+  //   ],
+  // },
+  // { title: "Blog", link: "#" },
+  // { title: "Culture", link: "#" },
+  // { title: "Contact", link: "#" },
 ];
 
 const Navbar = () => {
@@ -141,6 +141,9 @@ const Navbar = () => {
 
             <button className="mt-10 flex items-center text-black border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white transition duration-300">
               Start your project <ArrowRight className="ml-2 w-5 h-5" />
+
+
+              
             </button>
           </motion.div>
         )}
