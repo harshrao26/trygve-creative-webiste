@@ -65,7 +65,7 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full flex justify-between items-center md:px-8 py-2 z-50 transition-all duration-300 ${
           scrolled ? "backdrop-blur-md bg-white/30 shadow-md" : "bg-transparent"
-        } ${showNav ? "translate-y-0" : "-translate-y-full"}`}
+        } ${showNav ? "translate" : "-translate-y- "}`}
       >
         {/* Logo */}
         <a href="/" className="flex items-center">
