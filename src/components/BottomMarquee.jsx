@@ -32,7 +32,7 @@ import { VelocityScroll } from '../components/magicui/scroll-based-velocity';
 
 const Marquee = () => {
     return (
-      <div className="overflow-hidden relative w-full md:h-screen h-80 bg-bl overflow-hidden bg-black">
+      <div className="overflow-  relative w-full md:h-screen h-80 bg-bl overflow-hidden bg-black">
         {/* Background Video */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-10"></div>
         <video
@@ -52,7 +52,23 @@ const Marquee = () => {
           <div className="">
             <VelocityScroll>TRYGVE PIXELS {"   "}</VelocityScroll>
           </div>
+
+
+          <p className='z-20 text-white text-base md:text-xl font- max-w-5xl mx-auto text-center mt-4'>  
+          Trygve Pixels, a brand under Trygve Studio Private
+Limited, specializes in Website Development and
+Graphic Design. We craft visually stunning, high-
+performance websites with a design-first approach,
+ensuring seamless UI/UX and strong brand identity.
+Our expertise includes responsive web solutions,
+SEO-driven strategies, and custom CMS integration,
+delivering engaging digital experiences that drive
+results. With a focus on innovation and
+functionality, we help businesses establish a
+powerful online presence.
+        </p>
         </div>
+        
       </div>
     );
 };

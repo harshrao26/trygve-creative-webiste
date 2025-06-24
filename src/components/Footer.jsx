@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="md:flex-row flex flex-col justify-between items-center border-b border-gray-800 pb-6 mb-6">
           {/* Logo */}
-          <div className="text-4xl font-bold">Trygve Pixel</div>
+          <div className="text-4xl font-bold">Trygve Pixels</div>
 
           {/* Email with gradient animation */}
           <motion.a
@@ -19,7 +19,7 @@ const Footer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            faisal.saif@trygvestudio.com
+            info@trygvepixel.com
           </motion.a>
         </div>
 
