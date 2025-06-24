@@ -75,9 +75,9 @@ const Navbar = () => {
         {/* Menu Toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-white bg-black rounded-full p-2 shadow-md z-[100000000] fixed top-6 right-6"
+          className="text-white bg-black rounded-full p-0 shadow-md z-[100000000] fixed top-6 right-6"
         >
-          {menuOpen ? <X className="md:w-6 md:h-6 h-4 w-4" /> : <Menu className="md:w-6 md:h-6 h-4 w-4" />}
+          {/* {menuOpen ? <X className="md:w-6 md:h-6 h-4 w-4" /> : <Menu className="md:w-6 md:h-6 h-4 w-4" />} */}
         </button>
       </nav>
 

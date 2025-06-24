@@ -9,7 +9,25 @@ const Footer = () => {
         {/* Top Section */}
         <div className="md:flex-row flex flex-col justify-between items-center border-b border-gray-800 pb-6 mb-6">
           {/* Logo */}
-          <div className="text-4xl font-bold">Trygve Pixels</div>
+          <div >
+
+            <p className="text-4xl font-bold">
+              Trygve Pixels
+            </p>
+            <p className="text-gray-500 text-sm mt-2">
+              Powered By  <span></span>
+
+              <motion.a
+            href="faisal.saif@trygvestudio.com"
+            className="md:text-base font-great-vibes text-xl mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+Trygve Studio Private Limited          </motion.a>
+            </p>
+          </div>
+          
 
           {/* Email with gradient animation */}
           <motion.a
