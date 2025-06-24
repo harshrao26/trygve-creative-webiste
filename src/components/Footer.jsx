@@ -19,7 +19,7 @@ const Footer = () => {
 
               <motion.a
             href="faisal.saif@trygvestudio.com"
-            className="md:text-base font-great-vibes text-xl mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
+            className="md:text-base font-great-vibes text- mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -32,7 +32,7 @@ Trygve Studio Private Limited          </motion.a>
           {/* Email with gradient animation */}
           <motion.a
             href="faisal.saif@trygvestudio.com"
-            className="md:text-5xl font-great-vibes text-xl mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
+            className="md:text-5xl font-great-vibes text-2xl mt-4 md:mt-0 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text hover:from-purple-500 hover:to-blue-500 transition-all"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
