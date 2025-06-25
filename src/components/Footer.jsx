@@ -37,7 +37,7 @@ Trygve Studio Private Limited          </motion.a>
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            info@trygvepixel.com
+            info@trygvepixels.com
           </motion.a>
         </div>
 
